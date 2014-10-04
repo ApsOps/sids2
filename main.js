@@ -48,7 +48,7 @@ var shit_marvin_says = new Array(
     "I can finally do what I was made to do.",
     "To give you this."
 );
-var speed = 70;
+var speed = 40;
 var index = 0;
 text_position = 0;
 var string_length = shit_marvin_says[0].length;
@@ -68,13 +68,13 @@ function type_da_shit() {
         index++;
         if (index != shit_marvin_says.length) {
             string_length = shit_marvin_says[index].length;
-            setTimeout("type_da_shit()", 1000);
+            setTimeout("type_da_shit()", 500);
         }
     } else
         setTimeout("type_da_shit()", speed);
 
     if (index==46)
-        setTimeout("bring_da_cake()", 3000);
+        setTimeout("bring_da_cake()", 2000);
 
 }
 
